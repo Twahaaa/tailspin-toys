@@ -1,1 +1,87 @@
+/* Global accessibility overrides for the user-selectable high-contrast presentation. */
 @import "tailwindcss";
+
+html.high-contrast {
+  color-scheme: light;
+}
+
+html.high-contrast body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+html.high-contrast [class*='bg-slate-'] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+html.high-contrast [class*='text-slate-'] {
+  color: #000000 !important;
+}
+
+html.high-contrast [class*='border-slate-'] {
+  border-color: #000000 !important;
+}
+
+html.high-contrast [class*='bg-blue-'],
+html.high-contrast [class*='bg-purple-'] {
+  background-color: #000000 !important;
+  background-image: none !important;
+}
+
+html.high-contrast [class*='text-blue-'],
+html.high-contrast [class*='text-purple-'] {
+  color: #0000ee !important;
+}
+
+html.high-contrast a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+html.high-contrast header,
+html.high-contrast header a,
+html.high-contrast header button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast #menu {
+  background-color: #ffffff !important;
+  border: 2px solid #000000;
+}
+
+html.high-contrast #menu a {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+html.high-contrast input,
+html.high-contrast select,
+html.high-contrast option {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+html.high-contrast button {
+  border-color: #ffffff;
+}
+
+html.high-contrast [class*='from-'],
+html.high-contrast [class*='to-'] {
+  background-image: none !important;
+}
+
+html.high-contrast [data-testid='game-rating'],
+html.high-contrast [data-testid='game-rating'] .text-yellow-400,
+html.high-contrast [data-testid='game-category'],
+html.high-contrast [data-testid='game-publisher'] {
+  background-color: #ffbf00 !important;
+  color: #000000 !important;
+}
+
+html.high-contrast :focus-visible {
+  outline: 3px solid #ffbf00 !important;
+  outline-offset: 2px;
+}
